@@ -2,6 +2,8 @@
 import type { ReactNode } from 'react';
 import { NavBar } from 'src/components/organisms/navbar';
 
+import { SecondaryNavbar } from '@/components/organisms/SecondaryNavbar';
+
 // import { AppConfig } from '@/utils/AppConfig';
 
 type IMainProps = {
@@ -14,13 +16,18 @@ const Main = (props: IMainProps) => (
     {props.meta}
 
     <div>
-      <header className="border-b border-gray-300">
-        <NavBar />
+      <header>
+        <div className="border-b border-gray-300">
+          <NavBar />
+        </div>
+        <div className="border-b border-gray-300">
+          <SecondaryNavbar />
+        </div>
       </header>
 
       <main className="content py-5 text-xl">{props.children}</main>
 
-      <footer className="border-t border-gray-300 py-8 text-center text-sm" />
+      {/* <footer className="border-t border-gray-300 py-8 text-center text-sm" /> */}
     </div>
   </div>
 );

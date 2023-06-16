@@ -1,7 +1,7 @@
 import { FlowerSearchBar } from '@/components/atoms/FlowerSearchBar';
 import { LocationSearchBar } from '@/components/atoms/LocationSearchBar';
 
-const HeaderSearchBar = () => {
+const FullSearchBar = () => {
   return (
     <div>
       <div className="flex flex-row">
@@ -12,4 +12,4 @@ const HeaderSearchBar = () => {
   );
 };
 
-export default HeaderSearchBar;
+export default FullSearchBar;

@@ -21,7 +21,7 @@ const FlowerSearchBar = () => {
         type="text"
         name="location-search"
         id="location-search"
-        className="block h-[2.75rem] w-[220px] rounded-r-md border border-[#94A3B8] bg-[#F5F5F5] px-3 py-1 pl-10 text-gray-900 ring-0 placeholder:text-[#94A3B8] focus:outline-0 sm:text-sm sm:leading-6"
+        className="block h-[2.75rem] w-[220px] rounded-r-md border border-[#94A3B8] bg-transparent px-3 py-1 pl-10 text-gray-900 ring-0 placeholder:text-[#94A3B8] focus:outline-0 sm:text-sm sm:leading-6"
         placeholder="Search by flowers"
       />
     </div>
