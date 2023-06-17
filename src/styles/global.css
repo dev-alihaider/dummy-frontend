@@ -1,15 +1,15 @@
 @tailwind base;
 
 body {
-  background: #ffffff;
+    background: #ffffff;
 }
 
 a {
-  @apply text-blue-700;
+    @apply text-blue-700;
 }
 
 a:hover {
-  @apply border-b-2 border-blue-700;
+    @apply border-b-2 border-blue-700;
 }
 
 @tailwind components;
@@ -17,9 +17,26 @@ a:hover {
 @tailwind utilities;
 
 .content p {
-  @apply my-6;
+    @apply my-6;
 }
 
 .content ul {
-  @apply my-6;
+    @apply my-6;
+}
+
+.map-container {
+    height: 80vh;
+}
+
+.sidebar {
+    background-color: rgba(35, 55, 75, 0.9);
+    color: #fff;
+    padding: 6px 12px;
+    font-family: monospace;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    border-radius: 4px;
 }

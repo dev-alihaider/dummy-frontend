@@ -22,7 +22,7 @@ const SecondaryButtonWithElements = ({
   return (
     <button
       type="button"
-      className="h-11 w-36 cursor-pointer rounded-md bg-[#F1F5F9] px-3 py-2 text-base font-semibold leading-4 text-[#0F172A]"
+      className="h-11 w-fit cursor-pointer rounded-md bg-[#F1F5F9] px-3 py-2 text-base font-semibold leading-4 text-[#0F172A]"
       onClick={clickHandler}
     >
       <div className="flex flex-row items-center justify-center">

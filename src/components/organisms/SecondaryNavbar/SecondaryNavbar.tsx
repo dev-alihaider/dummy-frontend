@@ -6,10 +6,14 @@ import { SecondaryButtonWithElements } from '@/components/molecules/SecondaryBut
 
 const SecondaryNavbar = () => {
   return (
-    <div className="flex flex-row items-center justify-between px-16 py-8">
+    <div className="flex flex-row items-center justify-between px-16">
       <div className="flex flex-row items-center">
-        <div>
-          <FlowerAvatar emptyImageColor="#C4C4C4" categoryName="flower" />
+        <div id="selectedCategory">
+          <FlowerAvatar
+            emptyImageColor="#C4C4C4"
+            categoryName="flower"
+            isSelected
+          />
         </div>
         <div className="ml-3">
           <CarretSvg />
@@ -20,7 +24,11 @@ const SecondaryNavbar = () => {
         {Array.from(Array(5).keys()).map((i) => {
           return (
             <div className="ml-12 mr-10" key={i}>
-              <FlowerAvatar categoryName="flower" emptyImageColor="#C4C4C4" />
+              <FlowerAvatar
+                categoryName="flower"
+                emptyImageColor="#C4C4C4"
+                isSelected={false}
+              />
             </div>
           );
         })}

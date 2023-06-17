@@ -14,4 +14,8 @@ module.exports = withBundleAnalyzer({
   // So, the source code is "basePath-ready".
   // You can remove `basePath` if you don't need it.
   reactStrictMode: true,
+  env: {
+    NEXT_PUBLIC_MAPBOX_GL_ACCESS_TOKEN:
+      process.env.NEXT_PUBLIC_MAPBOX_GL_ACCESS_TOKEN,
+  },
 });

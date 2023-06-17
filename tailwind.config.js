@@ -1,6 +1,12 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+/** @type {(tailwindConfig: object) => object} */
+const withMT = require('@material-tailwind/react/utils/withMT');
+
+module.exports = withMT({
+  content: [
+    './src/**/*.{js,ts,jsx,tsx}',
+    'node_modules/@material-tailwind/react/components/**/*.{js,ts,jsx,tsx}',
+    'node_modules/@material-tailwind/react/theme/components/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     fontSize: {
       xs: '0.75rem',
@@ -38,8 +44,25 @@ module.exports = {
           800: '#2c5282',
           900: '#2a4365',
         },
+        neutral: {
+          100: '#F1F5F9',
+          300: '#CBD5E1',
+          900: '#0F172A',
+        },
+        primary: {
+          100: 'FA6F32',
+        },
+      },
+      iconButton: {
+        styles: {
+          colors: {
+            orange: {
+              backgroundColor: '#FA6F32',
+            },
+          },
+        },
       },
     },
   },
   plugins: [],
-};
+});
